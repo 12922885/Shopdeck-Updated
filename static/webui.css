@@ -1,0 +1,88 @@
+:root {
+  --primary-color: #b71c1c;
+  --secondary-color: #6c757d;
+  --text-color: #f8f9fa; 
+  --bg-color: #121212; 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #8c0000; 
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #1f1f1f; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
+}
+
+.webui-main-content {
+  margin-left: 300px;
+  padding: 30px;
+}
+
+.dropdown-item {
+  padding: 15px 30px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-toggle {
+  background-color: transparent;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: var(--primary-color);
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+
+.detail-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 20px;
+  background-color: #1f1f1f;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
